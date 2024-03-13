@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer components{
+    .main-content{
+        @apply bg-blue-500 text-white p-4 mt-4 mx-auto;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="cards-container">
+    <div class="cards">
+        <div *ngFor="let priceCard of priceCards" class="card-item">
+            <div class="card-title">{{priceCard.title}}</div>
+            <h3>${{priceCard.price}}</h3>
+            <div class="btn-purchase">Book now</div>
+            <div class="card-description">
+                <div *ngFor="let description of priceCard.description"><span class="pricecard-icon"><i
+                            class="fa-solid fa-check fa-xs"></i></span>{{description}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+.cards-container{
+    @apply flex min-h-screen items-center justify-center bg-slate-800;
+
+    .cards{
+        @apply flex flex-col lg:flex-row my-6;
+
+        .card-title{
+            @apply text-center uppercase text-gray-300;
+        }
+
+        .card-item{
+            width: 275px;
+            height: 275px;
+            @apply flex-col items-center;
+            @apply md:mx-10 my-6 bg-slate-700 text-white flex items-center justify-center select-none;
+            @apply rounded-xl p-8 border-violet-800 border-4;
+            @apply hover:border-violet-600 duration-200 transform hover:scale-105 lg:hover:scale-125;
+
+            h1{
+                @apply text-xl mt-3;
+            }
+
+            h3{
+                @apply text-sm mt-2 hover:animate-ping;
+            }
+
+            .btn-purchase{
+                @apply text-sm px-4 py-2 my-6 border-violet-600 border rounded-lg cursor-pointer;
+                @apply hover:bg-violet-600 hover:border-white duration-200;
+            }
+
+            .card-description{
+                @apply flex flex-col lg:items-start items-center text-xs;
+            }
+
+            .pricecard-icon{
+                @apply p-1 m-1;
+            }
+        }
+    }
+}
